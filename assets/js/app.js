@@ -1,42 +1,25 @@
-const buttons = document.querySelectorAll('button')
-const screen = document.getElementById("screen")
+const buttons = document.querySelectorAll('button');
+const screen = document.getElementById("screen");
+const calc = document.getElementById('calc');
 
+function insert(valor) {
+    screen.innerHTML += valor;
+};
 
+calc.addEventListener('click', () => {
+    screen.innerHTML = eval(screen.innerHTML);
+});
 
 buttons.forEach((button) => {
-    button.addEventListener('click', (e) => {
-        const value = e.target.innerText
-        const calc = document.getElementById('calc')
-
-
-
-        if (+value >= 0) {
-            console.log(`Número: ${value}`)
-            screen.innerText += value
-
-        }
-
-        if (value == '-' || value == '+' || value == 'x' || value == '/' || value == '.') {
-            console.log(`Operador: ${value}`)
-            screen.innerText += value
-        }
-
-
-        calc.addEventListener('click', () => {
-            let n1 = Number(value)
-            screen.innerText = n1 + n1
-
-        })
-
-
+    button.addEventListener('click', (valor) => {
 
     })
 });
 
 
-function Limpar() {
-    screen.innerText = ''
-}
+function AllClear() {
+    screen.innerText = '';
+};
 
 
 
