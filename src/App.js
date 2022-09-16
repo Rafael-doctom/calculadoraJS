@@ -22,14 +22,14 @@ function App() {
     if (value === 'AC') {
       setInput(0)
     };
-
-  }
+  };
 
   const btnEqual = (value) => {
     if (value === '=') {
+      /* eslint no-eval: 0 */
       const resultTela = eval(input)
       setInput(resultTela)
-    }
+    };
   };
 
 
