@@ -11,22 +11,22 @@ function App() {
       setInput(input + value)
     };
 
-    if (input == '0') {
+    if (input === '0') {
       setInput(value)
     };
 
-    if (value == '+' || value == '-' || value == '/' || value == '*') {
+    if (value === '+' || value === '-' || value === '/' || value === '*') {
       setInput(input + value)
     };
 
-    if (value == 'AC') {
+    if (value === 'AC') {
       setInput(0)
     };
 
   }
 
   const btnEqual = (value) => {
-    if (value == '=') {
+    if (value === '=') {
       const resultTela = eval(input)
       setInput(resultTela)
     }
