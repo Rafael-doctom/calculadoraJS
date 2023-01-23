@@ -11,7 +11,7 @@ function App() {
       setInput(input + value)
     };
 
-    if (input === '0') {
+    if (input == '0') {
       setInput(value)
     };
 
@@ -94,7 +94,6 @@ function App() {
               <button className='equal' onClick={e => btnEqual(e.target.value)} value="=">
                 =
               </button>
-
             </div>
           </div>
         </div>

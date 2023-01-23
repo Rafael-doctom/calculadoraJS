@@ -3,8 +3,8 @@
 }
 
 .content {
-  width: 25vw;
-  margin: 6rem auto;
+  width: 100%;
+  margin: 2rem auto;
 }
 
 .screen-calculator{
@@ -35,8 +35,8 @@
 .calculator button {
   background-color: #17a2b8;
   height: 12vh;
-  width: 4.5vw;
-  margin: 0.75rem 0.44rem 0 0;
+  width: 23%;
+  margin: 0.75rem 0.30rem 0 0;
   border: 0;
   border-radius: 2px;
   cursor: pointer;
@@ -58,7 +58,7 @@
 
 .calculator .equal {
   height: 12vh;
-  width: 9.5vw;
+  width: 47%;
   margin: 0.75rem 0.44rem 0 0;
   border: 0;
   border-radius: 2px;
@@ -73,4 +73,32 @@
 
 .calculator .equal:hover {
   background-color: #dc3546f0;
+}
+
+@media (min-width:425px){
+  .content {
+    width: 90%;
+  }
+  
+}
+
+@media (min-width:768px){
+  .content {
+    width: 50%;
+  }
+  
+}
+
+@media (min-width:1024px){
+  .content {
+    width: 40%;
+  }
+  
+}
+
+@media (min-width:1200px){
+  .content {
+    width: 30%;
+  }
+  
 }
